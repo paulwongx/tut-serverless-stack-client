@@ -4,7 +4,7 @@ import {
   HelpBlock,
   FormGroup,
   FormControl,
-  FormLabel
+  ControlLabel
 } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import { useAppContext } from "../libs/contextLib";
@@ -76,7 +76,7 @@ export default function Signup() {
     return (
       <form onSubmit={handleConfirmationSubmit}>
         <FormGroup controlId="confirmationCode" bsSize="large">
-          <FormLabel>Confirmation Code</FormLabel>
+          <ControlLabel>Confirmation Code</ControlLabel>
           <FormControl
             autoFocus
             type="tel"
@@ -102,7 +102,7 @@ export default function Signup() {
     return (
       <form onSubmit={handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
-          <FormLabel>Email</FormLabel>
+          <ControlLabel>Email</ControlLabel>
           <FormControl
             autoFocus
             type="email"
@@ -111,7 +111,7 @@ export default function Signup() {
           />
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
-          <FormLabel>Password</FormLabel>
+          <ControlLabel>Password</ControlLabel>
           <FormControl
             type="password"
             value={fields.password}
@@ -119,7 +119,7 @@ export default function Signup() {
           />
         </FormGroup>
         <FormGroup controlId="confirmPassword" bsSize="large">
-          <FormLabel>Confirm Password</FormLabel>
+          <ControlLabel>Confirm Password</ControlLabel>
           <FormControl
             type="password"
             onChange={handleFieldChange}
